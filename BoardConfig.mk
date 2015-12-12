@@ -34,7 +34,7 @@ ENABLE_CPUSETS := true
 # Inline kernel building
 BOARD_KERNEL_IMAGE_NAME := Image.gz-dtb
 TARGET_KERNEL_SOURCE := kernel/huawei/angler
-TARGET_KERNEL_CONFIG := cyanogenmod_angler_defconfig
+TARGET_KERNEL_CONFIG := mokee_angler_defconfig
 
 TARGET_KERNEL_ARCH := arm64
 TARGET_KERNEL_HEADER_ARCH := arm64
@@ -146,10 +146,10 @@ WIFI_DRIVER_FW_PATH_AP := "/vendor/firmware/fw_bcmdhd_apsta.bin"
 # Include an expanded selection of fonts
 EXTENDED_FONT_FOOTPRINT := true
 
-# CMHW
-BOARD_USES_CYANOGEN_HARDWARE := true
+# MKHW
+BOARD_USES_MOKEE_HARDWARE := true
 BOARD_HARDWARE_CLASS := \
-    hardware/cyanogen/cmhw \
-    device/huawei/angler/cmhw
+    hardware/mokee/mkhw \
+    device/huawei/angler/mkhw
 
 -include vendor/huawei/angler/BoardConfigVendor.mk

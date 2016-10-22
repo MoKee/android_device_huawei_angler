@@ -96,6 +96,8 @@ BOARD_CHARGER_DISABLE_INIT_BLANK := true
 # Enable auto suspend in poweroff charging to save power
 BOARD_CHARGER_ENABLE_SUSPEND := true
 
+TARGET_BOOTANIMATION_MULTITHREAD_DECODE := true
+
 # Enable dex-preoptimization to speed up first boot sequence
 ifeq ($(HOST_OS),linux)
   ifneq ($(TARGET_BUILD_VARIANT),eng)
@@ -134,7 +136,6 @@ TARGET_USES_INTERACTION_BOOST := true
 # Once camera module can run in the native mode of the system (either
 # 32-bit or 64-bit), the following line should be deleted
 BOARD_QTI_CAMERA_32BIT_ONLY := true
-USE_DEVICE_SPECIFIC_CAMERA := true
 
 # Wifi related defines
 BOARD_WPA_SUPPLICANT_DRIVER := NL80211

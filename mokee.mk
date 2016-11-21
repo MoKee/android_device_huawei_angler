@@ -2,16 +2,16 @@
 TARGET_SCREEN_HEIGHT := 2560
 TARGET_SCREEN_WIDTH := 1440
 
-# Inherit some common CM stuff.
-$(call inherit-product, vendor/cm/config/common_full_phone.mk)
+# Inherit some common MK stuff.
+$(call inherit-product, vendor/mk/config/common_full_phone.mk)
 
 # Inherit device configuration
 $(call inherit-product, device/huawei/angler/aosp_angler.mk)
 
-DEVICE_PACKAGE_OVERLAYS += device/huawei/angler/overlay-cm
+DEVICE_PACKAGE_OVERLAYS += device/huawei/angler/overlay-mk
 
 ## Device identifier. This must come after all inclusions
-PRODUCT_NAME := cm_angler
+PRODUCT_NAME := mk_angler
 PRODUCT_BRAND := google
 PRODUCT_MODEL := Nexus 6P
 

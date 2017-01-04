@@ -2,13 +2,11 @@
 TARGET_SCREEN_HEIGHT := 2560
 TARGET_SCREEN_WIDTH := 1440
 
-# Inherit some common MK stuff.
+# Inherit some common stuff.
 $(call inherit-product, vendor/mk/config/common_full_phone.mk)
 
 # Inherit device configuration
 $(call inherit-product, device/huawei/angler/aosp_angler.mk)
-
-DEVICE_PACKAGE_OVERLAYS += device/huawei/angler/overlay-mk
 
 ## Device identifier. This must come after all inclusions
 PRODUCT_NAME := mk_angler

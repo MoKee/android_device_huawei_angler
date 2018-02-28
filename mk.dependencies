@@ -2,5 +2,9 @@
  {
    "repository": "android_kernel_huawei_angler",
    "target_path": "kernel/huawei/angler"
+ },
+ {
+   "repository": "android_vendor_huawei_angler",
+   "target_path": "vendor/huawei/angler"
  }
 ]
